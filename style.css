@@ -17,7 +17,7 @@ body {
 /* HEADER */
 
 header {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 85vh;
   top: 0;
@@ -33,26 +33,22 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
 }
 
-h1 {
+.header-name {
+  position: absolute;
   font-family: "Bonheur Royal", cursive;
-  font-size: 5em;
+  font-size: 3em;
   color: rgb(188, 188, 190);
-  padding-top: 2rem;
-  margin-left: 3rem;
+  top: 30px;
+  left: 70px;
   text-shadow: 3px 3px 5px rgba(18, 27, 37, 0.8);
 }
 
-@media only screen and (max-width: 800px) {
-  h1 {
-    text-align: center;
-  }
-}
-
 ul {
+  height: 60vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 12rem;
+  align-content: flex-end;
 }
 
 li {
